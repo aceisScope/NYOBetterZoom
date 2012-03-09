@@ -37,9 +37,11 @@
 	
 	[self setMinimumZoomForCurrentFrame];
 	
-	if(wasAtMinimumZoom || self.imageScrollView.zoomScale < self.imageScrollView.minimumZoomScale) {
-		[self.imageScrollView setZoomScale:self.imageScrollView.minimumZoomScale animated:YES];
-	}	
+    //seems unnecessary to put an if here, just setZoomScale will work. 
+//	if(wasAtMinimumZoom || self.imageScrollView.zoomScale < self.imageScrollView.minimumZoomScale) {
+//		[self.imageScrollView setZoomScale:self.imageScrollView.minimumZoomScale animated:YES];
+//	}
+	[self.imageScrollView setZoomScale:self.imageScrollView.minimumZoomScale animated:YES];
 }
 
 
