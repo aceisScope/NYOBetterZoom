@@ -66,6 +66,7 @@
 	//UIImage *image = [UIImage imageNamed:@"tall.png"];
 	//UIImage *image = [UIImage imageNamed:@"wide.png"];
 	UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    [imageView setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
 	
 	// Finish the ScrollView setup
 	[self.imageScrollView setContentSize:imageView.frame.size];
